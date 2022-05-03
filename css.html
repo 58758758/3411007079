@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 型態選擇器(標籤) */
+        span{
+            color: red;
+        }
+        /* class選擇器(使用.符號) */
+        .one{
+            color: red;
+        }
+        /* id選擇器(使用#符號) */
+        #one{
+            color: green;
+        }
+        *{
+            font-family:"標楷體" ;
+        }
+        /* 屬性選擇器 */
+        input[type="button"]{
+            background-color: yellow;
+        }
+        /* 後代選擇器(使用空格) */
+        ol li{
+            color: red;
+        }
+        /* 子選擇器(使用>符號) */
+        div>a{
+            color: green;
+        }
+        /*同層相鄰選擇器(使用+符號)、同層相鄰選擇器(使用~符號) */
+        /* ul+p{
+            color:red;
+        }*/
+        ul~p{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>型態選擇器(標籤)</h2>
+        <span>型態選擇器</span>
+    <hr>
+    <h2>class選擇器(使用.符號)</h2>
+        <a href="#" class="one">test</a>
+    <hr>
+    <h2>id選擇器(使用#符號)</h2>
+        <a href="#" id="one">id選擇器</a>
+    <hr>
+    <h2>屬性選擇器</h2>
+       <input type="button" value="按鈕">
+       <hr>
+       <h2>後代選擇器(使用空格)</h2>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </u1>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+        <hr>
+        <h2>子選擇器(使用>符號)</h2>
+        <div>
+            <p>
+                <a href="#">p</a>
+            </p>
+        </div>
+        <div>
+            <a href="#">a</a>
+        </div>
+        <h2>同層相鄰選擇器(使用+符號)、同層相鄰選擇器(使用~符號)</h2>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <p>tt1</p>
+        <p>tt2</p>
+        <p>tt3</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <p>tt1</p>
+        <p>tt2</p>
+        <p>tt3</p>
+        <hr>
+</body>
+</html>
