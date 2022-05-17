@@ -34,16 +34,131 @@
              }
              /* 文字字距 */
              .text_spacing{
-                 letter-spacing: 20px;
+                 etter-spacing: 20px;
              }
-
+             /* Font字型 */
+                 /* 字體樣式 */
+                 .font_style{
+                     /* 正常 */
+                     /* font_style:normal; */
+                     /* 斜體 */
+                     font-style:italic;
+                     /* 傾斜體 */
+                     /* font-style:oblique; */
+                 }
+                 /* 字體粗細 */
+                 .font_weight{
+                /* 正常 */
+                /* font-weight: norml; */
+                /* 粗體 */
+                font-weight:bold;
+                /* font-weight: 100; */
+                 }
+                 /* 字體大小 */
+                 .font_size{
+                     font-size: 30px;
+                 }
+                 /* 字型 */
+                 .font_family{
+                      font-family:"標改體" ;
+                 }
+                 /* Link連結 */
+                 /* 未訪問 */
+                 a:link{
+                     color: red;
+                 }
+                 /* 訪問過 */
+                 a:visited{
+                     color: green;
+                 }
+                 /* 移入 */
+                 a:hover{
+                     color: yellow;
+                 }
+                 /* 點一下 */
+                 a:active{
+                     color: gray;
+                 }
+                /* list列表 */
+                .list{
+                    /* 類型 */
+                    list-style-type: upper-roman;
+                    /* 位置 */
+                    list-style-position: inside;
+                    /* 圖片 */
+                    list-style-image: url("https://fakeimg.pl/15x15/");
+                }
+                 /* Table表格 */
+                  /* 邊框合併 */
+                table{
+                    border-collapse: collapse;
+                }
+                /* 水平、垂直對齊 */
+                td{
+                    /* 水平 */
+                    text-align: right;
+                    /* 垂直 */
+                    vertical-align: bottom;
+                }
+                /* 偶數行 */
+                tr:nth-child(even){
+                    background-color: blue;
+                    color: white;
+                  }
+                  /* 奇數行 */
+                  tr:nth-child(odd)
+                  {
+                      background-color: yellow;
+                  }
                  
-            
     </style>
 </head>
 <body>
     <div class="text_color text_align text_line_height text_decoration text_indent text_spacing">
        字體CSS
     </div>
+    <div> 
+        <div class="font_style font_weight font-size font-family">
+            Font字型 123
+    </div>
+    <a href="https://www.google.com.tw">google</a>
+    <ol class="list">
+     <li>list清單</li>
+     <li>002</li>
+     <li>003</li>
+     <li>004</li>
+     <li>005</li>
+    </ol>
+     <table border="1" width="300" height="300" cellpadding="0" cellpadding="0">
+         <tr>
+             <td>001</td>
+             <td>002</td>
+             <td>003</td>
+             <td>004</td>
+             <td>005</td>
+             
+         </tr>
+         <tr>
+            <td>001</td>
+             <td>002</td>
+             <td>003</td>
+             <td>004</td>
+             <td>005</td>
+         </tr>
+         <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+         </tr>
+         <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+         </tr>
+     </table>
 </body>
 </html>
