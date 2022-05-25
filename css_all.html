@@ -110,7 +110,52 @@
                   {
                       background-color: yellow;
                   }
-                 
+                 /* margin */
+                 .margin{
+                     border-width: 1px;
+                     border-style: solid;
+                     /* 上下左右 */
+                     /* margin: 10px; */
+                     /* 上下，左右 */
+                     /* margin: 10px 30px; */
+                     /* 上，右，下，左 */
+                     margin: 5px 10px 15px 40px;
+                 }
+                 /* padding */
+                 .padding{
+                     border-width: 1px;
+                     border-style: solid;
+                     /* 上下左右 */
+                     /* padding: 10px; */
+                     /* 上下，左右 */
+                     /* padding: 10px 20px; */
+                     /* 上，下，左，右 */
+                     padding: 1px 5px 15px 30px;
+
+                 }
+                 /* border */
+                 .border{
+                     /* 縮寫 */
+                     /* border: blue dashed 1px; */
+                     /* border粗細 */
+                     border-width: 1px;
+                     /* border樣式 */
+                     border-style: dashed;
+                     /* border顏色 */
+                     border-color: blue;
+                 }
+                 /* display */
+                 .display1{
+                     display: inline;
+                     }
+                 .display2{
+                     display: block;
+                 }
+                 .display3{
+                     border: 1px solid;
+                     width: 200px;
+                     display: inline-block;
+                 }
     </style>
 </head>
 <body>
@@ -160,5 +205,29 @@
             <td>005</td>
          </tr>
      </table>
+     <hr>
+     <!--box model-->
+
+     <div class="margin">margin</div>
+     <hr>
+     <div class="padding">padding</div>
+     <hr>
+     <div class="border">border</div>
+     <hr>
+     <!--display-->
+     <div class="display1">div1</div>
+     <div class="display1">div2</div>
+     <span class="display2">span1</span>
+     <span class="display2">span2</span>
+     <Span class="display3">span3</Span>
+     <hr>
+     <span>span1</span>
+     <span style="display:none">span2</span>
+     <span>span3</span>
+     <hr>
+     <span>span1</span>
+     <span style="visibility: hidden;">span2</span>
+     <span>span3</span>
+
 </body>
 </html>
