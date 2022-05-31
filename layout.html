@@ -13,12 +13,93 @@
             background-color: red;
             color: white;
         }
+        /* 相對位置*/
+        #box2{
+            position:relative;
+            top: 20px;
+            left: 20px;
+            background-color: blue;
+        }
+        /* 絕對位置 */
+        #box3{
+            position: absolute;
+            top: 180px;
+            left: 20px;
+            background-color: green;
+            
+
+        }
+        /* 浮動 */
+        .title{
+            border: 1px solid;
+            height: 150px;
+        }
+        .left{
+            float: left;
+            background-color: red;
+            width: 50px;
+            height: 150px;
+            }
+        .right{
+            float:right;
+            background-color: blue;
+            width: 50px;
+            height: 150px;
+        }    
+        /* z-index */
+        .img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+
+        }
+        /* overflow */
+        .overflow{
+            border: 1px solid;
+            height: 100px;
+            width: 200px;
+            overflow: scroll;
+        }
+        
+        
+        
     </style>
 </head>
 <body>
+    <!--z-index-->
+    <div>
+        123
+         <img class="img" src="https://fakeimg.pl/100x100/">
+       </div>
+    <br><br><br>
+    <br><br><br>
     <div class="box" id="box1">bpx1</div>
     <div class="box" id="box2">box2</div>
     <div class="box" id="box3">box3</div>
     <div class="box" id="box4">box4</div>
+<br>
+<br>
+<br>
+<br>
+<div class="title">
+   <div class="left">left</div>
+   <div class="right">right</div>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, natus quisquam dignissimos rem quae non, facere possimus excepturi ipsam ullam atque reprehenderit vero, nisi iste? Eum consequuntur consectetur vero hic?
+Iure repellendus aliquid similique dignissimos voluptate sequi explicabo aperiam perferendis ab incidunt! Distinctio voluptatem, earum iure dolorum assumenda recusandae, qui aliquam ipsum perspiciatis labore, nulla non! Dolore quibusdam consequatur sed.
+Quo ab nemo, ullam, commodi blanditiis exercitationem nostrum fuga, laborum reprehenderit earum vero rerum. Aut, at. Culpa aperiam repellendus deleniti soluta. Maxime voluptates corrupti rem recusandae culpa. Pariatur, soluta autem?
+Quis perspiciatis nam totam minus nostrum illum voluptatem aliquam atque, accusantium dolores sapiente cum neque adipisci hic eveniet officia! Adipisci quisquam ullam facere nihil blanditiis error consequatur totam culpa quas?
+Tenetur fugit minus itaque minima consequatur vitae ab ratione eligendi, fugiat earum numquam delectus. Eius, quisquam porro laboriosam modi, suscipit voluptates voluptas obcaecati a distinctio autem aperiam incidunt aliquid rerum?</p>
+</div>
+<br>
+<!--overflow-->
+<div class="overflow">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iste voluptas rem minima, neque excepturi quos aut vero iure similique facilis temporibus accusantium odit quod voluptatem laudantium et dolorem fuga.
+    Optio esse minus, cupiditate, neque sint debitis quia nobis excepturi libero labore repudiandae exercitationem reiciendis in, doloribus id enim! Reprehenderit optio praesentium accusamus magni pariatur magnam perspiciatis dolor doloremque architecto?
+    Minima eum eligendi quod impedit rerum veritatis dolorum ratione libero ipsa. Velit sapiente eum a saepe odit. Illo repellat, illum ullam adipisci repellendus eius at. Sint, consectetur alias! In, quos.
+    Quidem distinctio sequi a consequatur magni corrupti, necessitatibus tempore neque eos error quis voluptatum deleniti placeat sunt praesentium fugit ducimus repellendus mollitia amet. Obcaecati suscipit itaque eaque facere accusantium non!
+    Adipisci suscipit consectetur deserunt, quos, quis obcaecati odit sapiente harum, fugiat autem explicabo optio? Perferendis fuga libero ducimus voluptate, debitis suscipit deleniti distinctio, neque vitae voluptatem ut ab doloribus saepe!</p>
+
+</div>
 </body>
 </html>
